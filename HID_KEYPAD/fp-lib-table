@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name keyswitches)(type KiCad)(uri ${KIPRJMOD}/keyswitches.pretty-master)(options "")(descr ""))
+  (lib (name promicro)(type KiCad)(uri ${KIPRJMOD}/ProMicroKiCad-master/promicro.pretty)(options "")(descr ""))
+  (lib (name Rotary_Encoder)(type KiCad)(uri ${KIPRJMOD}/Rotary_Encoder.pretty)(options "")(descr ""))
+)
