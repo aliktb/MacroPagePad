@@ -11,7 +11,7 @@
 //Libraries
 #include <Keypad.h>         //https://github.com/Chris--A/Keypad
 #include <ClickEncoder.h>   //https://github.com/BennehBoy/clickEncoder
-#include <TimerOne.h>       //https://github.com/PaulStoffregen/TimerOne
+#include <TimerOne.h>       //https://github.com/PaulStoffregen/TimerOne This is neccesary for encoder functionality
 #include <HID-Project.h>    //https://github.com/NicoHood/HID
 
 
@@ -320,6 +320,8 @@ void volumeChange(uint16_t key)
 }
 
 
+//startup sequence for LEDs
+
 void init_led()
 {
 
@@ -345,7 +347,7 @@ void init_led()
       digitalWrite(page_3_led_pin, LOW);
       delay(d_time);
   
-     // d_time = d_time * ((cos(counter * 3.1415/100)+1)/(2));
+   
       d_time = d_time *( - sin(3.1415 * counter /(2*50)) + 1);
       counter++;
   }
